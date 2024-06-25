@@ -1,4 +1,5 @@
 import { parseCorsOrigins } from 'medusa-core-utils'
+import type { MiddlewaresConfig } from "@medusajs/medusa"
 import * as cors from 'cors'
 
 export const config: MiddlewaresConfig = {
