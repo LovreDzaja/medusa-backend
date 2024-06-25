@@ -6,7 +6,7 @@ export const config: MiddlewaresConfig = {
         {
             matcher: /^\/store(\/.*)?$/,
             middlewares: [
-                cors.default({ credentials: true, origin: parseCorsOrigins(process.env.STORE_CORS ?? '') }),
+                cors.default({ credentials: true, origin: parseCorsOrigins('http://192.168.8.195:3000/') }),
             ],
         },
     ],
